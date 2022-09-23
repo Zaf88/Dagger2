@@ -9,6 +9,7 @@ import javax.inject.Inject
  * obtain to validate user's input data.
  */
 private const val MAX_LENGTH = 5
+
 class EnterDetailsViewModel @Inject constructor() {
 
     private val _enterDetailsState = MutableLiveData<EnterDetailsViewState>()

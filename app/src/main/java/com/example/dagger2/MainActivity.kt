@@ -10,15 +10,11 @@ import com.example.dagger2.login.LoginActivity
 import com.example.registration.RegistrationActivity
 import com.example.settings.SettingsActivity
 import javax.inject.Inject
-///////
+
 
 class MainActivity : AppCompatActivity() {
 
-    //    //  Удаляем  private lateinit var mainViewModel: MainViewModel
-//    // @Inject annotated fields will be provided by Dagger
-//    @Inject
-//    lateinit var userManager: UserManager
-//
+
     @Inject
     lateinit var mainViewModel: MainViewModel
 

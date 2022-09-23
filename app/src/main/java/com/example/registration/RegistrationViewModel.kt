@@ -1,6 +1,6 @@
 package com.example.registration
 
-import android.os.UserManager
+
 import com.example.dagger2.di.ActivityScope
 import javax.inject.Inject
 

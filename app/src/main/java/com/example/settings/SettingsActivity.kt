@@ -11,26 +11,21 @@ import javax.inject.Inject
 
 class SettingsActivity : AppCompatActivity() {
 
-    // @Inject annotated fields will be provided by Dagger
+
     @Inject
     lateinit var settingsViewModel: SettingsViewModel
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-// Gets the userManager from the application graph to obtain the instance
-        // of UserComponent and gets this Activity injected
+
         val userManager = (application as MyApplication).appComponent.userManager()
         userManager.userComponent!!.inject(this)
 
-//        // 2) Injects appComponent
-//        (application as MyApplication).appComponent.inject(this)
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
 
-        // 3) Remove following lines
-//        val userManager = (application as MyApplication).userManager
-//        settingsViewModel = SettingsViewModel(userManager.userDataRepository!!, userManager)
+
         setupViews()
     }
 

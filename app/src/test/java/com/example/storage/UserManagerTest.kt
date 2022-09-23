@@ -8,21 +8,11 @@ import org.junit.Test
 import org.mockito.Mockito
 
 class UserManagerTest {
-    //    Например, если вы посмотрите на файл LoginViewModelTest.kt, который тестирует LoginViewModel,
-//    мы просто имитируем UserManager и передаем его в качестве параметра, как мы бы сделали без Dagger.
+
     private lateinit var storage: Storage
     private lateinit var userManager: UserManager
 
-    //    @Before
-//
-//    fun setup() {
-//        storage = FakeStorage()
-//        userManager = UserManager(storage)
-//    }
-//    Все модульные тесты остаются такими же, как и при ручном внедрении зависимостей,
-    //    за исключением одного. Когда мы добавили UserComponent.Factory в UserManager,
-    //    мы сломали его модульные тесты. Мы должны имитировать то, что вернет Dagger при
-    //    вызове create() на фабрике.
+
     @Before
     fun setup() {
         // Return mock userComponent when calling the factory

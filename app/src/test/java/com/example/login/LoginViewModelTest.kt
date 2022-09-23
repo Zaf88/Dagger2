@@ -1,6 +1,6 @@
 package com.example.login
 
-import android.arch.core.executor.testing.InstantTaskExecutorRule
+import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.example.dagger2.login.LoginError
 import com.example.dagger2.login.LoginSuccess
 import com.example.dagger2.login.LoginViewModel

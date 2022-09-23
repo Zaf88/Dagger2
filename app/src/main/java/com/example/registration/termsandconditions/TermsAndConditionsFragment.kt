@@ -15,7 +15,7 @@ import javax.inject.Inject
 
 class TermsAndConditionsFragment : Fragment() {
 
-//    private lateinit var registrationViewModel: RegistrationViewModel
+
 
     @Inject
     lateinit var registrationViewModel: RegistrationViewModel
@@ -23,8 +23,7 @@ class TermsAndConditionsFragment : Fragment() {
     override fun onAttach(context: Context) {
         super.onAttach(context)
         (activity as RegistrationActivity).registrationComponent.inject(this)
-//      заменяем, так как использует субкомпонент
-        //      (requireActivity().application as MyApplication).appComponent.inject(this)
+
     }
 
 
@@ -35,7 +34,7 @@ class TermsAndConditionsFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_terms_and_conditions, container, false)
 
-//        registrationViewModel = (activity as RegistrationActivity).registrationViewModel
+
 
         view.findViewById<Button>(R.id.next).setOnClickListener {
             registrationViewModel.acceptTCs()

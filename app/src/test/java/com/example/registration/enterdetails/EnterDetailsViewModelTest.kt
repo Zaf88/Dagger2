@@ -1,6 +1,7 @@
 package com.example.registration.enterdetails
 
-import android.arch.core.executor.testing.InstantTaskExecutorRule
+
+import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.example.storage.LiveDataTestUtil
 import org.junit.Assert
 import org.junit.Before

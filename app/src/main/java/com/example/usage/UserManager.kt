@@ -27,8 +27,7 @@ class UserManager @Inject constructor(
      *  is logged in or not, when the user logs in, a new instance will be created.
      *  When the user logs out, this will be null.
      */
-    //Remove line
-//    var userDataRepository: UserDataRepository? = null
+
 
     // Add or edit the following lines
     var userComponent: UserComponent? = null
