@@ -50,6 +50,10 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.mockito:mockito-core:3.4.6'
     testImplementation 'android.arch.core:core-testing:1.1.1'
+    androidTestImplementation project(path: ':app')
+    androidTestImplementation project(path: ':app')
+    androidTestImplementation project(path: ':app')
+    androidTestImplementation project(path: ':app')
 
     def androidx_test_version = "1.4.0"
     androidTestImplementation "androidx.test:runner:$androidx_test_version"

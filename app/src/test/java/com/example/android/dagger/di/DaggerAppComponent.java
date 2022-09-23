@@ -2,7 +2,6 @@
 package com.example.android.dagger.di;
 
 import android.content.Context;
-
 import com.example.android.dagger.login.LoginActivity_MembersInjector;
 import com.example.android.dagger.main.MainActivity_MembersInjector;
 import com.example.android.dagger.registration.RegistrationActivity_MembersInjector;
@@ -264,4 +263,3 @@ public final class DaggerAppComponent implements AppComponent {
     }
   }
 }
-
