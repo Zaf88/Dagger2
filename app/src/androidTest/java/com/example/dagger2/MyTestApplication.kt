@@ -17,14 +17,15 @@
 package com.example.dagger2
 
 import com.example.MyApplication
+import com.example.dagger2.MainActivity_MembersInjector.create
 import com.example.dagger2.di.AppComponent
-
+import com.example.dagger2.di.DaggerAppComponent
 
 
 class MyTestApplication : MyApplication() {
 
     override fun initializeComponent(): AppComponent {
         // Creates a new TestAppComponent that injects fakes types
-        return DaggerTestAppComponent.create()
+        return DaggerAppComponent.create()
     }
 }

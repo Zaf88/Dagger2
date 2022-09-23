@@ -2,7 +2,7 @@ package com.example
 
 import android.app.Application
 import com.example.dagger2.di.AppComponent
-
+import com.example.dagger2.di.DaggerAppComponent
 
 
 open class MyApplication : Application() {
@@ -15,7 +15,7 @@ open class MyApplication : Application() {
     open fun initializeComponent(): AppComponent {
         // Creates an instance of AppComponent using its Factory constructor
         // We pass the applicationContext that will be used as Context in the graph
-        return DaggerTestAppComponent.create(applicationContext)
+        return DaggerAppComponent.create(applicationContext)
     }
 
 }
